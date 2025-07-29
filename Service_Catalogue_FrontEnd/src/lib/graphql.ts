@@ -27,7 +27,7 @@ export const apolloClient = new ApolloClient({
 // GraphQL client for direct queries without Apollo
 export const graphqlClient = {
   async query(query: string, variables?: any) {
-    const response = await fetch('http://localhost:3000/shop-api', {
+    const response = await fetch('http://localhost:5000/shop-api', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
